@@ -6,7 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:pw": "playwright test",
+    "test:pw:ui": "playwright test --ui",
+    "test:pw:smoke": "playwright test tests/e2e/registration.spec.ts tests/e2e/login.spec.ts tests/e2e/hotels.spec.ts",
+    "test:pw:api": "playwright test tests/api",
+    "test:pw:e2e": "playwright test tests/e2e",
+    "pw:report": "playwright show-report"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -16,7 +22,8 @@
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vite.js/plugin-react": "^4.2.1",
+    "@playwright/test": "^1.46.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.8"
   }
