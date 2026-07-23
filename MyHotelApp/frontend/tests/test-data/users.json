@@ -1,0 +1,7 @@
+{
+  "existingUser": {
+    "name": "Test User",
+    "email": "testuser@example.com",
+    "password": "Password123!"
+  }
+}
